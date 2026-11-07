@@ -1,0 +1,10 @@
+Handle,Title,Body (HTML),Vendor,Type,Tags,Variant SKU,Variant Price,Variant Inventory Qty,Image Src
+plw-101,Memory Foam Pillow,"<p>Memory Foam Pillow. Memory Foam, 50x70cm.</p>",DemoBrand,Pillows,"Memory Foam,50x70cm",PLW-101,14.99,240,https://img.example/plw101.jpg
+plw-102,Bamboo Fiber Pillow,"<p>Bamboo Fiber Pillow. Bamboo Fiber, 50x70cm.</p>",DemoBrand,Pillows,"Bamboo Fiber,50x70cm",PLW-102,10.99,180,https://img.example/plw102.jpg
+plw-103,Orthopedic Neck Pillow,"<p>Orthopedic Neck Pillow. Memory Foam, 30x50cm.</p>",DemoBrand,Pillows,"Memory Foam,30x50cm",PLW-103,12.99,0,https://img.example/plw103.jpg
+twl-201,Bamboo Bath Towel,"<p>Bamboo Bath Towel. Bamboo, 70x140cm.</p>",DemoBrand,Towels,"Bamboo,70x140cm",TWL-201,6.99,350,https://img.example/twl201.jpg
+twl-202,Microfiber Towel Set 3pcs,"<p>Microfiber Towel Set 3pcs. Microfiber, 3 sizes.</p>",DemoBrand,Towels,"Microfiber,3 sizes",TWL-202,7.99,500,https://img.example/twl202.jpg
+kit-301,Silicone Baking Mat Set,"<p>Silicone Baking Mat Set. Silicone, 40x30cm.</p>",DemoBrand,Kitchen & Dining,"Silicone,40x30cm",KIT-301,3.99,420,https://img.example/kit301.jpg
+kit-302,Digital Kitchen Scale 5kg,"<p>Digital Kitchen Scale 5kg. ABS Plastic, 5kg max.</p>",DemoBrand,Kitchen & Dining,"ABS Plastic,5kg max",KIT-302,9.99,160,https://img.example/kit302.jpg
+org-401,Vacuum Storage Bags 6pcs,"<p>Vacuum Storage Bags 6pcs. PA+PE, 6 pcs.</p>",DemoBrand,Storage & Organization,"PA+PE,6 pcs",ORG-401,5.99,800,https://img.example/org401.jpg
+org-402,Closet Organizer 7 Shelves,"<p>Closet Organizer 7 Shelves. Oxford Fabric, 7 shelves.</p>",DemoBrand,Storage & Organization,"Oxford Fabric,7 shelves",ORG-402,14.99,90,https://img.example/org402.jpg

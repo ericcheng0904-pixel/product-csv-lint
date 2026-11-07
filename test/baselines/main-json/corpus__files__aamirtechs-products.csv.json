@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/aamirtechs-products.csv",
+  "bytes": 930,
+  "dataRows": 8,
+  "products": 6,
+  "errorCount": 2,
+  "warningCount": 9,
+  "maxWarnings": null,
+  "ok": false,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL047",
+      "severity": "warning",
+      "row": 1,
+      "column": "Option1 name",
+      "message": "Row 1, column Option1 name: this file has Variant SKU, Variant Price, Variant Barcode without both Option1 name and Option1 value. This matters when you overwrite or update: a new default variant is created and existing variants are deleted.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Variant Weight",
+      "message": "Row 1, column Variant Weight: header \"Variant Weight\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL023",
+      "severity": "warning",
+      "row": 2,
+      "column": "Option1 Value",
+      "message": "Row 2, column Option1 Value: Option1 value is \"Medium\" and this product never sets Option1 name. The help pages do not say the importer rejects this.",
+      "citation": ""
+    },
+    {
+      "ruleId": "SCL023",
+      "severity": "warning",
+      "row": 4,
+      "column": "Option1 Value",
+      "message": "Row 4, column Option1 Value: Option1 value is \"Medium\" and this product never sets Option1 name. The help pages do not say the importer rejects this.",
+      "citation": ""
+    },
+    {
+      "ruleId": "SCL023",
+      "severity": "warning",
+      "row": 5,
+      "column": "Option1 Value",
+      "message": "Row 5, column Option1 Value: Option1 value is \"One Size\" and this product never sets Option1 name. The help pages do not say the importer rejects this.",
+      "citation": ""
+    },
+    {
+      "ruleId": "SCL022",
+      "severity": "error",
+      "row": 6,
+      "column": "Option1 Value",
+      "message": "Row 6, column Option1 Value: option values \"One Size\" are already used on row 5. The importer reports \"Validation failed: options are not unique\".",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL018",
+      "severity": "warning",
+      "row": 6,
+      "column": "Title",
+      "message": "Row 6, column Title: Title is \"Red Wool Scarf Deluxe\" here and \"Red Wool Scarf\" on the first row. Later rows are documented to skip this column, and the help page does not say which value the importer keeps.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL023",
+      "severity": "warning",
+      "row": 7,
+      "column": "Option1 Value",
+      "message": "Row 7, column Option1 Value: Option1 value is \"Small\" and this product never sets Option1 name. The help pages do not say the importer rejects this.",
+      "citation": ""
+    },
+    {
+      "ruleId": "SCL017",
+      "severity": "error",
+      "row": 7,
+      "column": "Title",
+      "message": "Row 7, column Title: handle \"mystery-variant\" has no Title. The importer ignores a line that has a handle and no product title.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL023",
+      "severity": "warning",
+      "row": 8,
+      "column": "Option1 Value",
+      "message": "Row 8, column Option1 Value: Option1 value is \"Standard\" and this product never sets Option1 name. The help pages do not say the importer rejects this.",
+      "citation": ""
+    },
+    {
+      "ruleId": "SCL023",
+      "severity": "warning",
+      "row": 9,
+      "column": "Option1 Value",
+      "message": "Row 9, column Option1 Value: Option1 value is \"UK 9\" and this product never sets Option1 name. The help pages do not say the importer rejects this.",
+      "citation": ""
+    }
+  ]
+}

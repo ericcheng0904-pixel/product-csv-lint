@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/heiguang-shopify-import.csv",
+  "bytes": 27577,
+  "dataRows": 109,
+  "products": 109,
+  "errorCount": 0,
+  "warningCount": 9,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 8,
+      "column": "Tags",
+      "message": "Row 8, column Tags: tag \"approx. 1 metre\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 18,
+      "column": "Tags",
+      "message": "Row 18, column Tags: tag \"approx. 1 metre\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 30,
+      "column": "Tags",
+      "message": "Row 30, column Tags: tag \"approx. 1 metre\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 42,
+      "column": "Tags",
+      "message": "Row 42, column Tags: tag \"approx. 1 metre\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 52,
+      "column": "Tags",
+      "message": "Row 52, column Tags: tag \"approx. 1 metre\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 64,
+      "column": "Tags",
+      "message": "Row 64, column Tags: tag \"approx. 1 metre\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 75,
+      "column": "Tags",
+      "message": "Row 75, column Tags: tag \"approx. 1 metre\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 85,
+      "column": "Tags",
+      "message": "Row 85, column Tags: tag \"approx. 1 metre\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 106,
+      "column": "Tags",
+      "message": "Row 106, column Tags: tag \"approx. 1 metre\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

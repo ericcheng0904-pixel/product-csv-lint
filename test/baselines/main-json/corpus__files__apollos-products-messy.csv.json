@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/apollos-products-messy.csv",
+  "bytes": 4358,
+  "dataRows": 25,
+  "products": 17,
+  "errorCount": 6,
+  "warningCount": 6,
+  "maxWarnings": null,
+  "ok": false,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL029",
+      "severity": "error",
+      "row": 7,
+      "column": "SEO Title",
+      "message": "Row 7, column SEO Title: SEO title is 84 characters. The documented limit is 70.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL025",
+      "severity": "error",
+      "row": 7,
+      "column": "Variant Price",
+      "message": "Row 7, column Variant Price: \"$29.99\" includes a currency symbol or letters. Only include the monetary value, without a currency symbol.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL024",
+      "severity": "warning",
+      "row": 8,
+      "column": "Variant Price",
+      "message": "Row 8, column Variant Price: Price is blank. The current column table says the default is 0.00. The older troubleshooting page lists \"Validation failed: price can't be blank\".",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL026",
+      "severity": "warning",
+      "row": 10,
+      "column": "Variant Compare At Price",
+      "message": "Row 10, column Variant Compare At Price: compare-at price 9.99 is not higher than price 9.99. The compare-at price has to be higher than the price to display a sale.",
+      "citation": "https://help.shopify.com/en/manual/products/details/product-pricing/sale-pricing"
+    },
+    {
+      "ruleId": "SCL025",
+      "severity": "warning",
+      "row": 11,
+      "column": "Variant Price",
+      "message": "Row 11, column Variant Price: \"1,099.00\" is not a plain number such as 9.99 or .99. Only a currency symbol or letters are documented as invalid, so this shape is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL025",
+      "severity": "warning",
+      "row": 12,
+      "column": "Variant Price",
+      "message": "Row 12, column Variant Price: \"12,50\" is not a plain number such as 9.99 or .99. Only a currency symbol or letters are documented as invalid, so this shape is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL015",
+      "severity": "error",
+      "row": 13,
+      "column": "Handle",
+      "message": "Row 13, column Handle: \"Trail Water Bottle\" contains a space. A valid URL handle can contain letters, dashes, and numbers, but it can't contain spaces.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL023",
+      "severity": "warning",
+      "row": 17,
+      "column": "Option1 Value",
+      "message": "Row 17, column Option1 Value: Option1 value is \"6ft\" and this product never sets Option1 name. The help pages do not say the importer rejects this.",
+      "citation": ""
+    },
+    {
+      "ruleId": "SCL017",
+      "severity": "error",
+      "row": 18,
+      "column": "Title",
+      "message": "Row 18, column Title: handle \"slow-feeder-bowl\" has no Title. The importer ignores a line that has a handle and no product title.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL023",
+      "severity": "warning",
+      "row": 19,
+      "column": "Option1 Value",
+      "message": "Row 19, column Option1 Value: Option1 value is \"XL\" and this product never sets Option1 name. The help pages do not say the importer rejects this.",
+      "citation": ""
+    },
+    {
+      "ruleId": "SCL017",
+      "severity": "error",
+      "row": 19,
+      "column": "Title",
+      "message": "Row 19, column Title: handle \"calming-collar-xl\" has no Title. The importer ignores a line that has a handle and no product title.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL016",
+      "severity": "error",
+      "row": 20,
+      "column": "Handle",
+      "message": "Row 20, column Handle: URL handle \"corrugated-cat-scratcher\" already appeared in an earlier product. Keep every row for a product together. If rows with the same URL handle are separated by other products, the later rows are not imported as variants.",
+      "citation": "https://help.shopify.com/en/manual/migrating-to-shopify/migrating-from-amazon"
+    }
+  ]
+}

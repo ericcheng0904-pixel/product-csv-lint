@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/natsuki-valid-products.csv",
+  "bytes": 916,
+  "dataRows": 2,
+  "products": 2,
+  "errorCount": 0,
+  "warningCount": 0,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": []
+}

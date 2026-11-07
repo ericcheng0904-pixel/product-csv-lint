@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/ianbertoni-shopify-products.csv",
+  "bytes": 55341,
+  "dataRows": 60,
+  "products": 60,
+  "errorCount": 0,
+  "warningCount": 1,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL036",
+      "severity": "warning",
+      "row": 59,
+      "column": "Image alt text",
+      "message": "Row 59, column Image alt text: image alt text is 136 characters. The maximum is 512 and the documented optimal length is 125 or fewer.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/joomni-export-sample.csv",
+  "bytes": 1170,
+  "dataRows": 4,
+  "products": 2,
+  "errorCount": 0,
+  "warningCount": 0,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": []
+}

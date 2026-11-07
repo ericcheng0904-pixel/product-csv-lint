@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "file": "test/fixtures/regressions/standard-product-type.csv",
+  "bytes": 127,
+  "dataRows": 1,
+  "products": 1,
+  "errorCount": 0,
+  "warningCount": 0,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": []
+}

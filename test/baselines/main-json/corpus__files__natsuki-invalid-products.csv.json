@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/natsuki-invalid-products.csv",
+  "bytes": 794,
+  "dataRows": 2,
+  "products": 1,
+  "errorCount": 5,
+  "warningCount": 4,
+  "maxWarnings": null,
+  "ok": false,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL028",
+      "severity": "error",
+      "row": 2,
+      "column": "Image Src",
+      "message": "Row 2, column Image Src: \"not-a-url\" is not an absolute http:// or https:// URL. The importer requires http:// in front of an image URL, and product images are documented as publicly reachable https:// URLs.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL029",
+      "severity": "error",
+      "row": 2,
+      "column": "SEO Title",
+      "message": "Row 2, column SEO Title: SEO title is 112 characters. The documented limit is 70.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL027",
+      "severity": "error",
+      "row": 2,
+      "column": "Status",
+      "message": "Row 2, column Status: \"live\" is not one of: active, draft, or archived. Values are matched without case sensitivity because the sample CSV uses TRUE, FALSE, DENY, CONTINUE, and Active, while the column table shows those words in lowercase. Surrounding spaces are ignored.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL017",
+      "severity": "error",
+      "row": 2,
+      "column": "Title",
+      "message": "Row 2, column Title: handle \"broken-mug\" has no Title. The importer ignores a line that has a handle and no product title.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL025",
+      "severity": "error",
+      "row": 2,
+      "column": "Variant Price",
+      "message": "Row 2, column Variant Price: \"USD 18\" includes a currency symbol or letters. Only include the monetary value, without a currency symbol.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL018",
+      "severity": "warning",
+      "row": 3,
+      "column": "Body (HTML)",
+      "message": "Row 3, column Body (HTML): Body (HTML) is \" \" here and \"Short\" on the first row. Later rows are documented to skip this column, and the help page does not say which value the importer keeps.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL019",
+      "severity": "warning",
+      "row": 3,
+      "column": "Option1 Name",
+      "message": "Row 3, column Option1 Name: Option1 name is \"Size\" here and \"Color\" on the first row of this product. The sample product CSV keeps one option name, on the first row.",
+      "citation": "https://cdn.shopify.com/shopifycloud/product-knowledge/production/csv/product_template.csv"
+    },
+    {
+      "ruleId": "SCL025",
+      "severity": "warning",
+      "row": 3,
+      "column": "Variant Price",
+      "message": "Row 3, column Variant Price: \"-4\" is not a plain number such as 9.99 or .99. Only a currency symbol or letters are documented as invalid, so this shape is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL018",
+      "severity": "warning",
+      "row": 3,
+      "column": "Vendor",
+      "message": "Row 3, column Vendor: Vendor is \"Other Studio\" here and \"Example Studio\" on the first row. Later rows are documented to skip this column, and the help page does not say which value the importer keeps.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

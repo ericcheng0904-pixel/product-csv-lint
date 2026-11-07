@@ -1,0 +1,60 @@
+# Composite action. GitHub checks this repository out at the ref the workflow
+# requested (github.action_ref, or the working tree when the workflow uses
+# uses: ./). npm ci builds that checkout. The linter is not an npm registry package.
+name: catalog-csv-lint
+description: Lint Shopify product CSVs for documented import problems before upload.
+
+inputs:
+  files:
+    description: Glob of CSV files to lint, relative to the repository. node_modules and .git are skipped.
+    required: false
+    default: "**/*.csv"
+  max-warnings:
+    description: Fail when one file has more warnings than this non-negative integer. Empty does not cap warnings.
+    required: false
+    default: ""
+  fail-on-warnings:
+    description: When true, and max-warnings is empty, fail if a file has any warning (the same as max-warnings 0).
+    required: false
+    default: "false"
+  annotations:
+    description: Emit GitHub workflow annotations for each finding.
+    required: false
+    default: "true"
+
+outputs:
+  errors:
+    description: Total error findings, plus one for each file that could not be read.
+    value: ${{ steps.lint.outputs.errors }}
+  warnings:
+    description: Total warning findings.
+    value: ${{ steps.lint.outputs.warnings }}
+
+runs:
+  using: composite
+  steps:
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: "20"
+
+    - name: Install catalog-csv-lint
+      shell: bash
+      run: |
+        set -euo pipefail
+        ref="${GITHUB_ACTION_REF:-local}"
+        repo="${GITHUB_ACTION_REPOSITORY:-action checkout}"
+        echo "Node $(node --version)"
+        echo "Installing catalog-csv-lint from ${repo}@${ref}"
+        npm ci --include=dev --no-fund --no-audit --prefix "$GITHUB_ACTION_PATH"
+        test -f "$GITHUB_ACTION_PATH/dist/cli.js"
+
+    - name: Lint product CSVs
+      id: lint
+      shell: bash
+      env:
+        INPUT_FILES: ${{ inputs.files }}
+        INPUT_MAX_WARNINGS: ${{ inputs.max-warnings }}
+        INPUT_FAIL_ON_WARNINGS: ${{ inputs.fail-on-warnings }}
+        INPUT_ANNOTATIONS: ${{ inputs.annotations }}
+      run: node "$GITHUB_ACTION_PATH/scripts/run-action.mjs"

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/schemamap-products-bad-price.csv",
+  "bytes": 254,
+  "dataRows": 3,
+  "products": 3,
+  "errorCount": 2,
+  "warningCount": 2,
+  "maxWarnings": null,
+  "ok": false,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL047",
+      "severity": "warning",
+      "row": 1,
+      "column": "Option1 name",
+      "message": "Row 1, column Option1 name: this file has Variant SKU, Variant Price without both Option1 name and Option1 value. This matters when you overwrite or update: a new default variant is created and existing variants are deleted.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL025",
+      "severity": "error",
+      "row": 2,
+      "column": "Variant Price",
+      "message": "Row 2, column Variant Price: \"$29.99\" includes a currency symbol or letters. Only include the monetary value, without a currency symbol.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL025",
+      "severity": "warning",
+      "row": 3,
+      "column": "Variant Price",
+      "message": "Row 3, column Variant Price: \"-15.00\" is not a plain number such as 9.99 or .99. Only a currency symbol or letters are documented as invalid, so this shape is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL025",
+      "severity": "error",
+      "row": 4,
+      "column": "Variant Price",
+      "message": "Row 4, column Variant Price: \"not-a-number\" includes a currency symbol or letters. Only include the monetary value, without a currency symbol.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

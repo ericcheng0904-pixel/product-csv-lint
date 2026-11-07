@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/carbondigital-product-template.csv",
+  "bytes": 2654,
+  "dataRows": 5,
+  "products": 3,
+  "errorCount": 0,
+  "warningCount": 1,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL040",
+      "severity": "warning",
+      "row": 4,
+      "column": "Variant Inventory Qty",
+      "message": "Row 4, column Variant Inventory Qty: inventory quantity is blank while inventory tracker is \"shopify\". The current column table says the default is 0. The older troubleshooting page says inventory quantity can't be blank.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    }
+  ]
+}

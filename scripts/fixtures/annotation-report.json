@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "file": "products/a,b:c%\r\n.csv",
+  "bytes": 42,
+  "dataRows": 1,
+  "products": 1,
+  "errorCount": 1,
+  "warningCount": 1,
+  "maxWarnings": null,
+  "ok": false,
+  "truncated": {
+    "SCL015": 2
+  },
+  "findings": [
+    {
+      "ruleId": "SCL015",
+      "severity": "error",
+      "row": 4,
+      "column": "URL handle",
+      "message": "Row 4, column URL handle: 100% \"bad\"\r\nvalue | still, has: punctuation",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": null,
+      "column": null,
+      "message": "File: header, has: oddities %\n",
+      "citation": ""
+    }
+  ]
+}

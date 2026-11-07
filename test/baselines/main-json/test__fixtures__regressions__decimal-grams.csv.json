@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "file": "test/fixtures/regressions/decimal-grams.csv",
+  "bytes": 155,
+  "dataRows": 2,
+  "products": 2,
+  "errorCount": 0,
+  "warningCount": 2,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL038",
+      "severity": "warning",
+      "row": 2,
+      "column": "Variant Grams",
+      "message": "Row 2, column Variant Grams: \"226.796185\" includes a decimal. You should specify only the numerical value, without the unit of measurement or decimals.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL038",
+      "severity": "warning",
+      "row": 3,
+      "column": "Variant Grams",
+      "message": "Row 3, column Variant Grams: \"5.125\" includes a decimal. You should specify only the numerical value, without the unit of measurement or decimals.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

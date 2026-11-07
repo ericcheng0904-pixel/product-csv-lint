@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/shopify-transporter-products.csv",
+  "bytes": 2220,
+  "dataRows": 7,
+  "products": 1,
+  "errorCount": 0,
+  "warningCount": 14,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Image Attachment",
+      "message": "Row 1, column Image Attachment: header \"Image Attachment\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Metafield Key",
+      "message": "Row 1, column Metafield Key: header \"Metafield Key\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Metafield Namespace",
+      "message": "Row 1, column Metafield Namespace: header \"Metafield Namespace\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Metafield Value",
+      "message": "Row 1, column Metafield Value: header \"Metafield Value\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Metafield Value Type",
+      "message": "Row 1, column Metafield Value Type: header \"Metafield Value Type\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Metafields Global Description Tag",
+      "message": "Row 1, column Metafields Global Description Tag: header \"Metafields Global Description Tag\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Metafields Global Title Tag",
+      "message": "Row 1, column Metafields Global Title Tag: header \"Metafields Global Title Tag\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Published At",
+      "message": "Row 1, column Published At: header \"Published At\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Published Scope",
+      "message": "Row 1, column Published Scope: header \"Published Scope\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Template Suffix",
+      "message": "Row 1, column Template Suffix: header \"Template Suffix\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Variant Weight",
+      "message": "Row 1, column Variant Weight: header \"Variant Weight\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL024",
+      "severity": "warning",
+      "row": 2,
+      "column": "Variant Price",
+      "message": "Row 2, column Variant Price: Price is blank. The current column table says the default is 0.00. The older troubleshooting page lists \"Validation failed: price can't be blank\".",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL026",
+      "severity": "warning",
+      "row": 7,
+      "column": "Variant Compare At Price",
+      "message": "Row 7, column Variant Compare At Price: compare-at price 15.00 is not higher than price 20.00. The compare-at price has to be higher than the price to display a sale.",
+      "citation": "https://help.shopify.com/en/manual/products/details/product-pricing/sale-pricing"
+    },
+    {
+      "ruleId": "SCL026",
+      "severity": "warning",
+      "row": 8,
+      "column": "Variant Compare At Price",
+      "message": "Row 8, column Variant Compare At Price: compare-at price 15.00 is not higher than price 30.00. The compare-at price has to be higher than the price to display a sale.",
+      "citation": "https://help.shopify.com/en/manual/products/details/product-pricing/sale-pricing"
+    }
+  ]
+}

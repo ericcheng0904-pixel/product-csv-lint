@@ -1,0 +1,38 @@
+name: self-test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  sample:
+    name: sample product CSV
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint the official sample
+        uses: ./
+        with:
+          files: "test/fixtures/shopify/**/*.csv"
+
+  broken:
+    name: broken product CSV
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint the broken fixture
+        id: lint
+        continue-on-error: true
+        uses: ./
+        with:
+          files: "test/fixtures/broken-product.csv"
+      - name: Require the broken fixture to fail
+        shell: bash
+        run: |
+          set -euo pipefail
+          outcome="${{ steps.lint.outcome }}"
+          errors="${{ steps.lint.outputs.errors }}"
+          echo "lint outcome=$outcome errors=$errors"
+          test "$outcome" = "failure"
+          test -n "$errors"
+          test "$errors" != "0"

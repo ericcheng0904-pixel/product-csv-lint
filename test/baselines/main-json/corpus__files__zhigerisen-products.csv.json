@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/zhigerisen-products.csv",
+  "bytes": 1693,
+  "dataRows": 9,
+  "products": 9,
+  "errorCount": 0,
+  "warningCount": 2,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL047",
+      "severity": "warning",
+      "row": 1,
+      "column": "Option1 name",
+      "message": "Row 1, column Option1 name: this file has Variant SKU, Variant Price, Variant Inventory Qty without both Option1 name and Option1 value. This matters when you overwrite or update: a new default variant is created and existing variants are deleted.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 9,
+      "column": "Tags",
+      "message": "Row 9, column Tags: tag \"PA+PE\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/schemamap-products-minimal.csv",
+  "bytes": 111,
+  "dataRows": 1,
+  "products": 1,
+  "errorCount": 0,
+  "warningCount": 1,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL047",
+      "severity": "warning",
+      "row": 1,
+      "column": "Option1 name",
+      "message": "Row 1, column Option1 name: this file has Variant SKU, Variant Price without both Option1 name and Option1 value. This matters when you overwrite or update: a new default variant is created and existing variants are deleted.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

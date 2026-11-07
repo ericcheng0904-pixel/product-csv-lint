@@ -1,0 +1,53 @@
+{
+  "name": "catalog-csv-lint",
+  "version": "0.1.0",
+  "description": "Check a Shopify product CSV for documented import problems before you upload it.",
+  "keywords": [
+    "shopify",
+    "csv",
+    "product-import",
+    "lint",
+    "migration"
+  ],
+  "homepage": "https://github.com/ericcheng0904-pixel/product-csv-lint",
+  "bugs": {
+    "url": "https://github.com/ericcheng0904-pixel/product-csv-lint/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "catalog-csv-lint": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.map",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericcheng0904-pixel/product-csv-lint.git"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/cli.js",
+    "test": "npm run build && node --import tsx --test test/*.test.ts && node --test scripts/gh-annotations.test.mjs scripts/run-action.test.mjs",
+    "prepare": "node scripts/prepare.mjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}

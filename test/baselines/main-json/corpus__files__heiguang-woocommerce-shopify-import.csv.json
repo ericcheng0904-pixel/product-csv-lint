@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/heiguang-woocommerce-shopify-import.csv",
+  "bytes": 11856,
+  "dataRows": 28,
+  "products": 17,
+  "errorCount": 0,
+  "warningCount": 0,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": []
+}

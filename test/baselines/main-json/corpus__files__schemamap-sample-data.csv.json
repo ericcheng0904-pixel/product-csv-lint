@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/schemamap-sample-data.csv",
+  "bytes": 4236,
+  "dataRows": 6,
+  "products": 6,
+  "errorCount": 12,
+  "warningCount": 1,
+  "maxWarnings": null,
+  "ok": false,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL003",
+      "severity": "warning",
+      "row": 1,
+      "column": "URL handle",
+      "message": "Row 1, column URL handle: the URL handle column is missing. This matters when you overwrite or update. A new product with no variants can omit it, because the handle is created from Title. An update requires URL handle and Title.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL044",
+      "severity": "error",
+      "row": 4,
+      "column": "Status",
+      "message": "Row 4, column Status: Status is blank. When the Status column is present it needs a value on the product row (active, draft, or archived). Later variant rows in the sample file leave it blank.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL028",
+      "severity": "error",
+      "row": 4,
+      "column": "Variant Image",
+      "message": "Row 4, column Variant Image: \"g\" is not an absolute http:// or https:// URL. The importer requires http:// in front of an image URL, and product images are documented as publicly reachable https:// URLs.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL027",
+      "severity": "error",
+      "row": 4,
+      "column": "Variant Weight Unit",
+      "message": "Row 4, column Variant Weight Unit: \"active\" is not one of: g, kg, lb, or oz. Values are matched without case sensitivity because the sample CSV uses TRUE, FALSE, DENY, CONTINUE, and Active, while the column table shows those words in lowercase. Surrounding spaces are ignored.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL044",
+      "severity": "error",
+      "row": 5,
+      "column": "Status",
+      "message": "Row 5, column Status: Status is blank. When the Status column is present it needs a value on the product row (active, draft, or archived). Later variant rows in the sample file leave it blank.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL028",
+      "severity": "error",
+      "row": 5,
+      "column": "Variant Image",
+      "message": "Row 5, column Variant Image: \"g\" is not an absolute http:// or https:// URL. The importer requires http:// in front of an image URL, and product images are documented as publicly reachable https:// URLs.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL027",
+      "severity": "error",
+      "row": 5,
+      "column": "Variant Weight Unit",
+      "message": "Row 5, column Variant Weight Unit: \"active\" is not one of: g, kg, lb, or oz. Values are matched without case sensitivity because the sample CSV uses TRUE, FALSE, DENY, CONTINUE, and Active, while the column table shows those words in lowercase. Surrounding spaces are ignored.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL044",
+      "severity": "error",
+      "row": 6,
+      "column": "Status",
+      "message": "Row 6, column Status: Status is blank. When the Status column is present it needs a value on the product row (active, draft, or archived). Later variant rows in the sample file leave it blank.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL028",
+      "severity": "error",
+      "row": 6,
+      "column": "Variant Image",
+      "message": "Row 6, column Variant Image: \"g\" is not an absolute http:// or https:// URL. The importer requires http:// in front of an image URL, and product images are documented as publicly reachable https:// URLs.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL027",
+      "severity": "error",
+      "row": 6,
+      "column": "Variant Weight Unit",
+      "message": "Row 6, column Variant Weight Unit: \"active\" is not one of: g, kg, lb, or oz. Values are matched without case sensitivity because the sample CSV uses TRUE, FALSE, DENY, CONTINUE, and Active, while the column table shows those words in lowercase. Surrounding spaces are ignored.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL044",
+      "severity": "error",
+      "row": 7,
+      "column": "Status",
+      "message": "Row 7, column Status: Status is blank. When the Status column is present it needs a value on the product row (active, draft, or archived). Later variant rows in the sample file leave it blank.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL028",
+      "severity": "error",
+      "row": 7,
+      "column": "Variant Image",
+      "message": "Row 7, column Variant Image: \"g\" is not an absolute http:// or https:// URL. The importer requires http:// in front of an image URL, and product images are documented as publicly reachable https:// URLs.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL027",
+      "severity": "error",
+      "row": 7,
+      "column": "Variant Weight Unit",
+      "message": "Row 7, column Variant Weight Unit: \"active\" is not one of: g, kg, lb, or oz. Values are matched without case sensitivity because the sample CSV uses TRUE, FALSE, DENY, CONTINUE, and Active, while the column table shows those words in lowercase. Surrounding spaces are ignored.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

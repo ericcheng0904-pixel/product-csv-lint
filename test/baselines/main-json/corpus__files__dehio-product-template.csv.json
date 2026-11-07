@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/dehio-product-template.csv",
+  "bytes": 1434,
+  "dataRows": 0,
+  "products": 0,
+  "errorCount": 1,
+  "warningCount": 1,
+  "maxWarnings": null,
+  "ok": false,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL004",
+      "severity": "warning",
+      "row": 1,
+      "column": "Handle;Title;Body (HTML);Vendor;Type;Tags;Published;Option1 Name;Option1 Value;Option2 Name;Option2 Value;Option3 Name;Option3 Value;Variant SKU;Variant Grams;Variant Inventory Tracker;Variant Inventory Qty;Variant Inventory Policy;Variant Fulfillment Service;Variant Price;Variant Compare At Price;Variant Requires Shipping;Variant Taxable;Variant Barcode;Image Src;Image Position;Image Alt Text;Gift Card;SEO Title;SEO Description;Google Shopping / Google Product Category;Google Shopping / Gender;Google Shopping / Age Group;Google Shopping / MPN;Google Shopping / AdWords Grouping;Google Shopping / AdWords Labels;Google Shopping / Condition;Google Shopping / Custom Product;Google Shopping / Custom Label 0;Google Shopping / Custom Label 1;Google Shopping / Custom Label 2;Google Shopping / Custom Label 3;Google Shopping / Custom Label 4;Variant Image;Variant Weight Unit;Variant Tax Code;Cost per item;Status;Collection",
+      "message": "Row 1, column Handle;Title;Body (HTML);Vendor;Type;Tags;Published;Option1 Name;Option1 Value;Option2 Name;Option2 Value;Option3 Name;Option3 Value;Variant SKU;Variant Grams;Variant Inventory Tracker;Variant Inventory Qty;Variant Inventory Policy;Variant Fulfillment Service;Variant Price;Variant Compare At Price;Variant Requires Shipping;Variant Taxable;Variant Barcode;Image Src;Image Position;Image Alt Text;Gift Card;SEO Title;SEO Description;Google Shopping / Google Product Category;Google Shopping / Gender;Google Shopping / Age Group;Google Shopping / MPN;Google Shopping / AdWords Grouping;Google Shopping / AdWords Labels;Google Shopping / Condition;Google Shopping / Custom Product;Google Shopping / Custom Label 0;Google Shopping / Custom Label 1;Google Shopping / Custom Label 2;Google Shopping / Custom Label 3;Google Shopping / Custom Label 4;Variant Image;Variant Weight Unit;Variant Tax Code;Cost per item;Status;Collection: header \"Handle;Title;Body (HTML);Vendor;Type;Tags;Published;Option1 Name;Option1 Value;Option2 Name;Option2 Value;Option3 Name;Option3 Value;Variant SKU;Variant Grams;Variant Inventory Tracker;Variant Inventory Qty;Variant Inventory Policy;Variant Fulfillment Service;Variant Price;Variant Compare At Price;Variant Requires Shipping;Variant Taxable;Variant Barcode;Image Src;Image Position;Image Alt Text;Gift Card;SEO Title;SEO Description;Google Shopping / Google Product Category;Google Shopping / Gender;Google Shopping / Age Group;Google Shopping / MPN;Google Shopping / AdWords Grouping;Google Shopping / AdWords Labels;Google Shopping / Condition;Google Shopping / Custom Product;Google Shopping / Custom Label 0;Google Shopping / Custom Label 1;Google Shopping / Custom Label 2;Google Shopping / Custom Label 3;Google Shopping / Custom Label 4;Variant Image;Variant Weight Unit;Variant Tax Code;Cost per item;Status;Collection\" is not a documented product CSV column. The page says you can't add any other columns. Incorrect headers open a mapping dialog, so this is a warning.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv https://help.shopify.com/en/manual/products/import-export/common-import-issues"
+    },
+    {
+      "ruleId": "SCL001",
+      "severity": "error",
+      "row": 1,
+      "column": "Title",
+      "message": "Row 1, column Title: the Title column is missing. Title is required for a new product and for an update.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

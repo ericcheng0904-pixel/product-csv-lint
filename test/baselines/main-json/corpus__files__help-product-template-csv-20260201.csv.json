@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/help-product-template-csv-20260201.csv",
+  "bytes": 6302,
+  "dataRows": 17,
+  "products": 3,
+  "errorCount": 0,
+  "warningCount": 6,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL026",
+      "severity": "warning",
+      "row": 14,
+      "column": "Variant Compare At Price",
+      "message": "Row 14, column Variant Compare At Price: compare-at price 64.95 is not higher than price 95. The compare-at price has to be higher than the price to display a sale.",
+      "citation": "https://help.shopify.com/en/manual/products/details/product-pricing/sale-pricing"
+    },
+    {
+      "ruleId": "SCL038",
+      "severity": "warning",
+      "row": 14,
+      "column": "Variant Grams",
+      "message": "Row 14, column Variant Grams: \"226.796185\" includes a decimal. You should specify only the numerical value, without the unit of measurement or decimals.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL026",
+      "severity": "warning",
+      "row": 15,
+      "column": "Variant Compare At Price",
+      "message": "Row 15, column Variant Compare At Price: compare-at price 64.95 is not higher than price 95. The compare-at price has to be higher than the price to display a sale.",
+      "citation": "https://help.shopify.com/en/manual/products/details/product-pricing/sale-pricing"
+    },
+    {
+      "ruleId": "SCL038",
+      "severity": "warning",
+      "row": 15,
+      "column": "Variant Grams",
+      "message": "Row 15, column Variant Grams: \"283.4952313\" includes a decimal. You should specify only the numerical value, without the unit of measurement or decimals.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL026",
+      "severity": "warning",
+      "row": 16,
+      "column": "Variant Compare At Price",
+      "message": "Row 16, column Variant Compare At Price: compare-at price 64.95 is not higher than price 95. The compare-at price has to be higher than the price to display a sale.",
+      "citation": "https://help.shopify.com/en/manual/products/details/product-pricing/sale-pricing"
+    },
+    {
+      "ruleId": "SCL038",
+      "severity": "warning",
+      "row": 16,
+      "column": "Variant Grams",
+      "message": "Row 16, column Variant Grams: \"396.8933238\" includes a decimal. You should specify only the numerical value, without the unit of measurement or decimals.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

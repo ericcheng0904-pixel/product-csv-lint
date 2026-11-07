@@ -1,0 +1,12 @@
+Source URL: https://cdn.shopify.com/shopifycloud/product-knowledge/production/csv/product_template.csv (answers 200 to any client)
+The help page links it as: https://help.shopify.com/csv/product_template.csv, which answers 403 to a client without a browser session and redirects to the URL above in a browser.
+Linked from: https://help.shopify.com/en/manual/products/import-export/using-csv
+
+Fetched 2026-10-27 UTC with a browser User-Agent. The help page links this file as the sample product CSV.
+https://help.shopify.com/csv/product_template.csv returned HTTP 302 to /cdn/shopifycloud/product-knowledge/production/csv/product_template.csv, then HTTP 200.
+sha256: f41b9562b9d9d951ff8f8184f7fe24e738304339d3e24104fc5c265fa00d28ff
+6536 bytes. The header includes Variant Barcodes and the four Packed product columns.
+
+This copy is Shopify's published sample template (example products: a t-shirt, a digital music product, and a perfume), unchanged, not data from a store.
+
+Licence / terms: Shopify publishes the file for download from the help page above. Shopify's Terms of Service (https://www.shopify.com/legal/terms) cover Shopify's sites. This repository does not add a licence Shopify did not grant. The file is kept unmodified so tests can check the headers that page links to today. The MIT licence of this repository does not replace those terms.

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/reelsmith-products.csv",
+  "bytes": 2236,
+  "dataRows": 9,
+  "products": 2,
+  "errorCount": 0,
+  "warningCount": 0,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": []
+}

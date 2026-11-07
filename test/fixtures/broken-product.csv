@@ -1,0 +1,4 @@
+Title,URL handle,Vendor,Option1 name,Option1 value,Price,Compare-at price,Status,Product image URL,SEO title,Gift card,Tags,Weight value (grams)
+Demo Hat,demo-hat,Acme,Size,Small,19.99,24.99,active,https://cdn.example.com/hat.jpg,Demo Hat,false,wool,200
+,demo-hat,Other,Color,Small,$12.00,10,live,https://cdn.example.com/hat_thumb.jpg,"This SEO title is intentionally far longer than seventy characters so the length rule fires",true,café,"5 kg"
+Coat,my coat,Acme,Size,Medium,8.00,8.00,draft,images/coat.jpg,Coat,false,linen,180

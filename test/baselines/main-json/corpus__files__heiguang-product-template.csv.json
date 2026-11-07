@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/heiguang-product-template.csv",
+  "bytes": 6221,
+  "dataRows": 16,
+  "products": 3,
+  "errorCount": 0,
+  "warningCount": 0,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": []
+}

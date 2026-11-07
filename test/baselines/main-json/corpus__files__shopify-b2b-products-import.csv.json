@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/shopify-b2b-products-import.csv",
+  "bytes": 2877,
+  "dataRows": 10,
+  "products": 10,
+  "errorCount": 0,
+  "warningCount": 5,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 7,
+      "column": "Tags",
+      "message": "Row 7, column Tags: tag \"season:spring-summer-2027\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 8,
+      "column": "Tags",
+      "message": "Row 8, column Tags: tag \"season:spring-summer-2027\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 9,
+      "column": "Tags",
+      "message": "Row 9, column Tags: tag \"season:spring-summer-2027\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 10,
+      "column": "Tags",
+      "message": "Row 10, column Tags: tag \"season:spring-summer-2027\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 11,
+      "column": "Tags",
+      "message": "Row 11, column Tags: tag \"season:spring-summer-2027\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

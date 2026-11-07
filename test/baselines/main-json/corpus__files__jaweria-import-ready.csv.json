@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "file": "corpus/files/jaweria-import-ready.csv",
+  "bytes": 5224,
+  "dataRows": 17,
+  "products": 11,
+  "errorCount": 0,
+  "warningCount": 3,
+  "maxWarnings": null,
+  "ok": true,
+  "truncated": null,
+  "findings": [
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 5,
+      "column": "Tags",
+      "message": "Row 5, column Tags: tag \"Home & Kitchen\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 7,
+      "column": "Tags",
+      "message": "Row 7, column Tags: tag \"Home & Kitchen\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    },
+    {
+      "ruleId": "SCL032",
+      "severity": "warning",
+      "row": 16,
+      "column": "Tags",
+      "message": "Row 16, column Tags: tag \"Home & Kitchen\" contains a symbol. Tags should use letters, numbers, and hyphens, and should avoid accented characters and symbols.",
+      "citation": "https://help.shopify.com/en/manual/products/import-export/using-csv"
+    }
+  ]
+}

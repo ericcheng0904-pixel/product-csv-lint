@@ -1,0 +1,20 @@
+Handle,Title,Vendor,Type,Tags,Published,Option1 Name,Option1 Value,Variant SKU,Variant Price,Variant Compare At Price,Variant Inventory Qty,Variant Barcode,Image Src,Image Position
+tk-1001,Precision Kitchen Thermometer,Thermoline,Thermometers,,TRUE,Variant,Red,TK-1001,24.90,39.90,12,4001234567890,https://example.com/img/tk-1001-red.jpg,1
+tk-1001,,,,,,Variant,Blue,TK-1001,24.90,39.90,7,4001234567891,https://example.com/img/tk-1001-blue.jpg,2
+tk-1001,,,,,,Variant,Green,TK-1001,24.90,39.90,,4001234567892,https://example.com/img/tk-1001-green.jpg,3
+tk-1002,Infrared Surface Thermometer,Thermoline,Thermometers,,TRUE,,,TK-1002,59.00,89.00,3,4001234567893,https://example.com/img/tk-1002.jpg,1
+tk-1003,Probe Replacement Set,Thermoline,Accessories,,TRUE,Variant,4 probes,TK-1003,18.50,29.90,40,4001234567894,,
+tk-1004,Digital Timer,Thermoline,Timers,,TRUE,,,TK-1004,12.00,19.90,25,,https://example.com/img/tk-1004.jpg,1
+tk-1005,Vacuum Sealer Bags 20x30,PackPro,Packaging,,TRUE,Variant,100 pcs,TK-1005,31.00,49.00,8,4001234567896,https://example.com/img/tk-1005.jpg,1
+tk-1005,,,,,,Variant,200 pcs,TK-1005,54.00,79.00,4,4001234567897,https://example.com/img/tk-1005.jpg,2
+tk-1006,Sous Vide Circulator,PackPro,Cooking,,TRUE,Variant,1200W,TK-1006,189.00,249.00,2,4001234567898,https://example.com/img/tk-1006.jpg,1
+tk-1007,Sous Vide Circulator,PackPro,Cooking,,TRUE,Variant,1500W,TK-1007,229.00,,1,4001234567899,https://example.com/img/tk-1007.jpg,1
+tk-1008,Silicone Mat,PackPro,Accessories,,TRUE,,,TK-1008,9.90,14.90,0,4001234567900,https://example.com/img/tk-1008.jpg,1
+tk-1009,Chef Knife 20cm,Klingen&Co,Knives,,TRUE,,,TK-1009,74.00,119.00,6,4001234567901,https://example.com/img/tk-1009.jpg,1
+tk-1010,Chef Knife 20cm,Klingen&Co,Knives,,TRUE,,,TK-1010,74.00,119.00,6,4001234567902,https://example.com/img/tk-1010.jpg,1
+tk-1011,Honing Steel,Klingen&Co,Knives,,TRUE,,,TK-1011,22.00,34.90,11,4001234567903,http://example.com/img/tk-1011.jpg,1
+tk-1012,Cutting Board Walnut,Holzwerk,Boards,,TRUE,Variant,small,TK-1012,45.00,69.00,5,4001234567904,https://example.com/img/tk-1012-s.jpg,1
+tk-1012,,,,,,Variant,large,TK-1012,68.00,99.00,3,4001234567905,https://example.com/img/tk-1012-l.jpg,2
+tk-1013,Cutting Board Oak,Holzwerk,Boards,,TRUE,Variant,medium,TK-1013,52.00,,9,4001234567906,https://example.com/img/tk-1013.jpg,1
+tk-1014,Scale 5kg,Holzwerk,Scales,,TRUE,,,TK-1014,28.00,44.90,0,4001234567907,https://example.com/img/tk-1014.jpg,1
+tk-1015,Scale 15kg,Holzwerk,Scales,,TRUE,,,TK-1015,39.00,59.00,14,4001234567908,,
