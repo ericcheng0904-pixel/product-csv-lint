@@ -3,6 +3,9 @@
 # uses: ./). npm ci builds that checkout. The linter is not an npm registry package.
 name: catalog-csv-lint
 description: Lint Shopify product CSVs for documented import problems before upload.
+branding:
+  icon: "check-circle"
+  color: "blue"
 
 inputs:
   files:

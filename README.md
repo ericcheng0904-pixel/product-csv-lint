@@ -1,26 +1,38 @@
 # catalog-csv-lint
 
+[![MIT license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Node.js 20 or later](https://img.shields.io/badge/node-%3E%3D20-339933)](package.json)
+[![Zero runtime dependencies](https://img.shields.io/badge/runtime_dependencies-0-success)](package.json)
+
 A command-line checker for documented import problems and likely mishandling in a Shopify product CSV, before you upload the file.
 
-This repository is `product-csv-lint`; the command is `catalog-csv-lint`.
+![catalog-csv-lint reporting import problems in a product CSV, then writing a corrected copy with --fix](media/demo.gif)
 
-It reads the file on your machine. It does not talk to a store, so it cannot know which handles already exist, which blanks will erase data on overwrite, or whether an image URL actually loads. The full list of checks, the pages they come from, and the limits that are deliberately not checked are in [docs/RULES.md](https://github.com/ericcheng0904-pixel/product-csv-lint/blob/main/docs/RULES.md).
+*The demo lints `test/fixtures/broken-product.csv`, then writes a corrected copy with `--fix`.*
 
-catalog-csv-lint is not affiliated with Shopify.
-
-This version was written with AI assistance.
-
-To see what changed between two product CSVs, use the free [Shopify CSV change preview](https://catalog-signoff.pages.dev/tools/shopify-csv-diff.html). For a catalog comparison report, see [Catalog Signoff](https://catalog-signoff.pages.dev/).
-
-## Install
-
-Node.js 20 or later. Install from GitHub:
+Install from GitHub:
 
 ```bash
 npm install -g --install-links github:ericcheng0904-pixel/product-csv-lint
 ```
 
-`prepare` compiles this repository into `dist/`. On npm 10, a global install from git links a temporary clone and then deletes it, so the command above passes `--install-links`, which keeps the built files. The compile step installs the dev dependencies. The package is not on npm.
+This repository is `product-csv-lint`; the command is `catalog-csv-lint`.
+
+Quick start:
+
+```bash
+catalog-csv-lint products.csv
+catalog-csv-lint products.csv --json
+catalog-csv-lint products.csv --fix products-fixed.csv
+```
+
+It reads the file on your machine. It does not talk to a store, so it cannot know which handles already exist, which blanks will erase data on overwrite, or whether an image URL actually loads. The full list of checks, the pages they come from, and the limits that are deliberately not checked are in [docs/RULES.md](https://github.com/ericcheng0904-pixel/product-csv-lint/blob/main/docs/RULES.md).
+
+catalog-csv-lint is not affiliated with Shopify.
+
+## Install
+
+Node.js 20 or later. The install command is at the top of this page. `prepare` compiles this repository into `dist/`. On npm 10, a global install from git links a temporary clone and then deletes it, so that command passes `--install-links`, which keeps the built files. The compile step installs the dev dependencies. The package is not on npm.
 
 ## Usage
 
@@ -253,7 +265,7 @@ With `--fix`, `fixes` and `output` follow `findings`. `file`, the counts, and `f
 
 ## Use in GitHub Actions
 
-There is no `v0` release yet. After a `v0` tag exists, a repository that keeps product CSVs can lint them on every push and pull request with:
+A repository that keeps product CSVs can lint them on every push and pull request with:
 
 ```yaml
 name: Product CSV
@@ -265,12 +277,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ericcheng0904-pixel/product-csv-lint@v0
+      - uses: ericcheng0904-pixel/product-csv-lint@main
         with:
           files: "products/**/*.csv"
 ```
 
-Until that tag exists, a checkout of this repository runs the same action with `uses: ./`.
+For a fixed version, replace `@main` with a commit SHA. A checkout of this repository runs the same action with `uses: ./`.
 
 The action sets up Node.js 20, builds this repository from the checkout GitHub resolved for that ref, and lints each matching file. Findings become workflow annotations. A gift-card warning and a URL handle with a space look like this:
 
@@ -296,6 +308,10 @@ npm test
 
 `npm test` compiles TypeScript to `dist/` and runs `node --test`, including `scripts/gh-annotations.test.mjs` and `scripts/run-action.test.mjs`. `prepare` runs the same build, so `npm install -g --install-links` from a git URL produces the `catalog-csv-lint` command. The git-install test runs that command against a local `git+file://` clone, which installs dev dependencies from the npm registry, so `npm test` needs network access on a machine with a cold npm cache. Offline, run `CATALOG_CSV_LINT_SKIP_INSTALL=1 npm test`. The packed-tarball tests do not use the network. npm 11.16 warns that `prepare` is not covered by `allowScripts` for a git install; the install still builds `dist/` today, and the test will show it if npm starts enforcing the setting. There are no runtime dependencies. The published package contains `dist/`, this README, `LICENSE`, and `package.json`. `.github/workflows/self-test.yml` runs the composite action on the sample product CSV and on `test/fixtures/broken-product.csv`.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to run the tests, how to add a rule, and the pull request checklist. Small tasks are drafted in [docs/good-first-issues.md](docs/good-first-issues.md).
+
 ## Releasing
 
 Maintainers publish; CI does not.
@@ -303,6 +319,12 @@ Maintainers publish; CI does not.
 1. Bump `version` in `package.json` and add the same version to `CHANGELOG.md`.
 2. Run `npm pack --dry-run`. The tarball should list only `dist/`, `README.md`, `LICENSE`, and `package.json`.
 3. Tag that commit (`v0.1.0` for this version), move the `v0` tag to it, and push the tags.
+
+## Related
+
+To see what changed between two product CSVs, use the free [Shopify CSV change preview](https://catalog-signoff.pages.dev/tools/shopify-csv-diff.html). For a catalog comparison report, see [Catalog Signoff](https://catalog-signoff.pages.dev/).
+
+This version was written with AI assistance.
 
 ## License
 
